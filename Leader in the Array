@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[] = {7, 10, 4, 10, 6, 5, 2};
+		int n = 7;
+		leaderOfArray(n,arr);
+	}
+	static void leaderOfArray(int n,int a[]){
+	    List<Integer> res = new ArrayList<>();
+	    int rightMax = Integer.MIN_VALUE;
+	    for(int i=n-1;i>=0;i--){
+	        if(a[i]>rightMax){
+	            res.add(a[i]);
+	            rightMax = Math.max(rightMax,a[i]);
+	        }
+	    }
+	    for(int i=res.size()-1;i>=0;i--)
+	        System.out.print(res.get(i)+" ");
+	}
+}
+
