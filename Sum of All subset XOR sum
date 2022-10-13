@@ -1,0 +1,14 @@
+public class Main {
+    int sum=0;
+    public static void main(String[] args){
+        int arr[] = {5,1,6};
+        System.out.println(getXORSum(arr,0,0));
+    }
+    static int getXORSum(int[] arr,int index,int cur){
+        if(index==arr.length){
+            return cur;
+        }
+        return getXORSum(arr,index+1,cur^arr[index]) + getXORSum(arr,index+1,cur);
+        // including the element at particular index  +  not including the element.
+    }
+}
