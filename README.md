@@ -2,7 +2,9 @@
 ## Question 1 : Leader in the Array
 Given a unsorted array, kindly find the leader in array . An element is called the leader of an
 array if there is no element greater than it on the right side.
-# Test case
+
+Test case
+
 int arr[] = {7, 10, 4, 10, 6, 5, 2}, n = 7;
 10 6 5 2
 Constraint
@@ -15,7 +17,8 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 different day in the future to sell that stock.
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any
 profit, return 0.
-# Test case
+
+Test case
 Input: prices = [7,1,5,3,6,4]
 Output: 5
 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
@@ -30,7 +33,7 @@ Note: Subsets with the same elements should be counted multiple times.
 An array a is a subset of an array b if a can be obtained from b by deleting some (possibly zero)
 elements of b.
 
-# Test case
+Test case
 Input: nums = [1,3]
 Output: 6
 Explanation: The 4 subsets of [1,3] are:
