@@ -1,3 +1,11 @@
+Question 1 : Leader in the Array
+Given a unsorted array, kindly find the leader in array . An element is called the leader of an array if there is no element greater than it on the right side.
+
+Test case
+
+int arr[] = {7, 10, 4, 10, 6, 5, 2}, n = 7; 10 6 5 2 Constraint Please submit the optimize approach in 0(n)
+
+ # Code: 
 import java.util.*;
 public class Main
 {
